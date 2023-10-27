@@ -4,11 +4,14 @@ import java.io.*;
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-    String num = "2 / ( ( 2 + 0 ) * 1 ) - 6";
-        System.out.println("Вводите данные в формате подобном: "+num);
-        while(true){
+        String num = "2 / ( ( 2 + 0 ) * 1 ) - 6";
+        System.out.println("Вводите данные в формате подобном: " + num);
+
+        while(true)
+        {
             System.out.println(evaluate(scanner.nextLine()));
         }
+
     }
 
     public static Double evaluate(String expression) {
